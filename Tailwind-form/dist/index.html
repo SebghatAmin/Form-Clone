@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-blue-400">Hello world!</h1>
-
-    <form action="" class="bg-amber-300">
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
-    </form>
+  <body class="bg-gray-400 p-5">
+    <div
+      class="flex bg-gray-500 justify-evenly h-900px p-5 shadow-[0px_0px_10px_2px_rgba(0,_255,_255,_0.7)]"
+    >
+      <form
+        id="inputForm"
+        class="border flex flex-col gap-2 bg-slate-400 h-96 w-[500px] p-6"
+      >
+        <label for="">Book Title</label>
+        <input id="Title" type="text" class="border" />
+        <label for="">Author</label>
+        <input id="Author" type="text" class="border" />
+        <label for="">Price</label>
+        <input id="Price" type="number" class="border" />
+        <button class="bg-red-600" type="button" id="saveBtn">Save</button>
+      </form>
+      <table id="table" class="border w-[500px] h-96 bg-gray-600">
+        <thead class="border">
+          <td class="border">BookTitle</td>
+          <td class="border">Author</td>
+          <td class="border">Price</td>
+          <td class="border">Action</td>
+        </thead>
+        <tbody id="tablebody"></tbody>
+      </table>
+    </div>
   </body>
 </html>
