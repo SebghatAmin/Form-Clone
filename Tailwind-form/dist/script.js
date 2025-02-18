@@ -1,10 +1,23 @@
-const inputForm = document.getElementById("inputForm");
-const saveBtn = document.getElementById("saveBtn");
-const table = document.getElementById("table");
-const tableBody = document.getElementById("tableBody");
+class Library {
+  constructor() {
+    this.name = document.getElementById("name");
+    this.author = document.getElementById("author");
+    this.price = document.getElementById("price");
+    this.saveButton=document.getElementById('saveBtn');
 
-function store() {
-  console.log("hi");
+    dataStore(){
+
+    }
+    renderTable(){
+
+    }
+    editFunction(){
+
+    }
+    deleteFunction(){
+        
+    }
+  }
 }
 
-store();
+const Library = new Library();
