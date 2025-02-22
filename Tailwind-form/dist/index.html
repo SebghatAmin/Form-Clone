@@ -7,33 +7,35 @@
   </head>
   <body class="bg-[#fefdfe] p-5">
     <div
-      class="flex rounded-2xl bg-[#e3d8f8] justify-evenly h-96 p-5 shadow-[5px_5px_0px_0px_rgba(0,_0,_0,_0.5)]"
+      class="flex rounded-2xl bg-[#e3d8f8] justify-evenly h-96 p-5 shadow-[5px_5px_0px_0px_rgba(0,0,0,0.5)]"
     >
       <form
         id="inputForm"
         class="border flex flex-col gap-2 bg-[#e3d8f8] rounded h-80 w-[500px] p-6"
       >
-        <h1 class="bg-amber-500 rounded">Book Registration form</h1>
-        <label for="">Book Title</label>
-        <input id="bookTitle" type="text" class="border rounded" />
-        <label for="">Author</label>
-        <input id="uthor" type="text" class="border rounded" />
-        <label for="">Price</label>
-        <input id="rice" type="number" class="border rounded" />
+        <h1 class="bg-amber-500 rounded font-sans font-bold text-black">
+          Book Registration Form
+        </h1>
+        <label for="bookTitle">Book Title</label>
+        <input id="bookTitle" name="name" type="text" class="border rounded" />
+        <label for="author">Author</label>
+        <input id="author" name="author" type="text" class="border rounded" />
+        <label for="price">Price</label>
+        <input id="price" name="price" type="number" class="border rounded" />
         <button class="bg-[#f84767] mt-4 rounded" type="button" id="saveBtn">
           Save
         </button>
       </form>
-      <table id="able" class="w-[500px] h-80 bg-gray-600 rounded">
+      <table id="table" class="w-[500px] h-80 bg-gray-600 rounded">
         <thead>
           <tr class="bg-amber-500 flex justify-evenly">
-            <td class="rounded">BookTitle</td>
+            <td class="rounded">Book Title</td>
             <td class="rounded">Author</td>
             <td class="rounded">Price</td>
             <td class="rounded">Action</td>
           </tr>
         </thead>
-        <tbody id="ablebody" class="rounded"></tbody>
+        <tbody id="tableBody" class="rounded"></tbody>
       </table>
     </div>
     <script src="script.js"></script>
